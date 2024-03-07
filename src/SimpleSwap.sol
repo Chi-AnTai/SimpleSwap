@@ -1,24 +1,37 @@
 // SPDX-License-Identifier: MIT
-pragma solidity >=0.8.0;
+pragma solidity 0.8.20;
+import "./TestERC20.sol";
 
 contract SimpleSwap {
-  address public token0;
-  address public token1;
+  // phase 1
+  TestERC20 public token0;
+  TestERC20 public token1;
+
+  // phase 2
+  // uint256 public totalSupply = 0;
+  // mapping(address => uint256) public share;
 
   constructor(address _token0, address _token1) {
-    token0 = _token0;
-    token1 = _token1;
+    
   }
 
-  function addLiquidity1(uint256 amount) public {
+  function swap(address _tokenIn, uint256 _amountIn) public {
+    
+  }
 
+  // phase 1
+  function addLiquidity1(uint256 _amount) public {
+    
   }
 
   function removeLiquidity1() public {
-
+    
   }
 
-  function swap1(address _tokenIn, uint256 _amountIn) public {
+  // phase 2
+  // function addLiquidity2(uint256 _amount) public {
+  // }
 
-  }
+  // function removeLiquidity2() public {
+  // }
 }
